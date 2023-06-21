@@ -25,7 +25,7 @@ div.items,
         margin-top: 50px;
     }
 
-    input {
+    form input {
         border-radius: 1rem !important;
         height: 50px;
         width: 100%;
@@ -33,11 +33,11 @@ div.items,
         margin-bottom: 15px;
     }
 
-    button {
+   form button {
         width: 100%;
     }
 
-    input::placeholder {
+ form input::placeholder {
         color: #ccc !important;
         font-size: 20px !important;
     }
@@ -50,66 +50,6 @@ div.items,
                                 }
                     }
 
-                                        button {
-                                            appearance: button;
-                                            background-color: #0f633c;
-                                            border: solid transparent;
-                                            border-radius: 16px;
-                                            border-width: 0 0 4px;
-                                            box-sizing: border-box;
-                                            color: #FFFFFF;
-                                            cursor: pointer;
-                                            display: inline-block;
-                                            font-family: din-round, sans-serif;
-                                            font-size: 15px;
-                                            font-weight: 700;
-                                            letter-spacing: .8px;
-                                            line-height: 20px;
-                                            margin: 0;
-                                            outline: none;
-                                            overflow: visible;
-                                            padding: 13px 16px;
-                                            text-align: center;
-                                            text-transform: uppercase;
-                                            touch-action: manipulation;
-                                            transform: translateZ(0);
-                                            transition: filter .2s;
-                                            user-select: none;
-                                            -webkit-user-select: none;
-                                            vertical-align: middle;
-                                            white-space: nowrap;
-                                            /* width: 100%; */
-                                            margin-bottom: 15px;
-                                        }
-                    
-                                        button:after {
-                                            background-clip: padding-box;
-                                            background-color: #198754;
-                                            border: solid transparent;
-                                            border-radius: 16px;
-                                            border-width: 0 0 4px;
-                                            bottom: -4px;
-                                            content: "";
-                                            left: 0;
-                                            position: absolute;
-                                            right: 0;
-                                            top: 0;
-                                            z-index: -1;
-                                        }
-                    
-                                       button:main,
-                                        button:focus {
-                                            user-select: auto;
-                                        }
-                    
-                                        button:hover:not(:disabled) {
-                                            filter: brightness(1.1);
-                                        }
-                    
-                                        .button:disabled {
-                                            cursor: auto;
-                                        }
-
                 }
             
                 h1 {
@@ -120,6 +60,7 @@ div.items,
                 }
 .items {
 
+
 h2 {
         text-align: center;
         margin: 10px 0 25px 0;
@@ -129,6 +70,7 @@ h2 {
     ol {
             padding: 0;
             counter-reset: section;
+        
         }
     
         li {
@@ -139,6 +81,7 @@ h2 {
             display: flex;
             padding: 15px 10px 5px 20px;
             justify-content: space-between;
+            
         }
     
         li::before {
@@ -153,25 +96,86 @@ h2 {
             margin-left: 20px;
             font-size: 20px;
         }
-    
-        button.delete {
-            background-color: rgb(150, 53, 53);
-            padding: 13px 15px;
-            margin-bottom: 5px;
-            margin-top: -3px;
-        }
-    
-         button.delete:after {
-            content: "×";
-            line-height: 28px;
-            background-color: rgb(197, 57, 57);
-        }
+                button.delete {
+                    background-color: rgb(150, 53, 53);
+                    padding: 13px 15px;
+                    margin-bottom: 5px;
+                    margin-top: -3px;
+                }
+        
+                button.delete:after {
+                    content: "×";
+                    line-height: 28px;
+                    background-color: rgb(197, 57, 57);
+                }
 
 }
+ button {
+     appearance: button;
+     background-color: #0f633c;
+     border: solid transparent;
+     border-radius: 16px;
+     border-width: 0 0 4px;
+     box-sizing: border-box;
+     color: #FFFFFF;
+     cursor: pointer;
+     display: inline-block;
+     font-family: din-round, sans-serif;
+     font-size: 15px;
+     font-weight: 700;
+     letter-spacing: .8px;
+     line-height: 20px;
+     margin: 0;
+     outline: none;
+     overflow: visible;
+     padding: 13px 16px;
+     text-align: center;
+     text-transform: uppercase;
+     touch-action: manipulation;
+     transform: translateZ(0);
+     transition: filter .2s;
+     user-select: none;
+     -webkit-user-select: none;
+     vertical-align: middle;
+     white-space: nowrap;
+     /* width: 100%; */
+     margin-bottom: 15px;
+ }
 
+ button:after {
+     background-clip: padding-box;
+    //  background-color: #198754;
+     border: solid transparent;
+     border-radius: 16px;
+     border-width: 0 0 4px;
+     bottom: -4px;
+     content: "";
+     left: 0;
+     position: absolute;
+     right: 0;
+     top: 0;
+     z-index: -1;
+ }
+.orange {
+    background-color: orange !important;
+
+    :after {
+        background-color: orange !important;
+    }
+}
+
+ button:main,
+ button:focus {
+     user-select: auto;
+ }
+
+ button:hover:not(:disabled) {
+     filter: brightness(1.1);
+ }
+
+ .button:disabled {
+     cursor: auto;
+ }
         }
-
-    
-
 
 }
